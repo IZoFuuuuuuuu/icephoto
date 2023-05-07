@@ -1,0 +1,78 @@
+<!-- https://code-step.com/portfolio1-p2/ -->
+<!-- https://code-step.com/demo/html/portfolio1/# -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ice photo</title>
+    <meta name="description" content="LP ice photo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="port.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header">
+      <h1 class="site-title">
+        <a href="#">
+         Ice Planet
+        </a>
+      </h1>
+    </header>
+
+    <main>
+      <!-- メインビジュアル -->
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./img/main-sp.jpg">
+          <img src="iceplanet-4.png" alt="テキストテキストテキスト">
+        </picture>
+      </div>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">アイスプラネットに関連しそうな写真をまとめてみました。</h2>
+        <ul>
+          <li><img src="iceplanet-1.png" alt="work1"></li>
+          <li><img src="iceplanet-2.png" alt="work2"></li>
+          <li><img src="iceplanet-3.png" alt="work3"></li>
+          <li><img src="iceplanet-4.png" alt="work4"></li>
+          <li><img src="iceplanet-5.png" alt="work5"></li>
+          <li><img src="iceplanet-6.png" alt="work6"></li>
+          <li><img src="iceplanet-7.png" alt="work1"></li>
+          <li><img src="iceplanet-8.png" alt="work2"></li>
+          <li><img src="iceplanet-9.png" alt="work3"></li>
+        </ul>
+    </section>
+      <footer id="footer"></footer>
+    </picture>
+  </div>
+    </main>
+    <div class="menu">
+      <ul>
+        <li><a href=""><ion-icon name="home-outline"></ion-icon> Home</a></li>
+        <li><a href=""><ion-icon name="images-outline"></ion-icon> Photo</a></li>
+        <li><a href=""><ion-icon name="book-outline"></ion-icon> Book</a></li>
+        <li><a href=""><ion-icon name="code-outline"></ion-icon> Code</a></li>
+      </ul>
+    </div>
+  <div class="backhome">
+    <p>       </p>
+    <a href="https://izofuuuuuuuu.github.io/icehome/">backhome</a>
+    <p>       </p>
+  </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", function () {
+        /* activeにする */
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
